@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="40%" stop-color="#6b21a8"/>
+      <stop offset="75%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <!-- Pen Nib Gradient -->
+    <linearGradient id="nibGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#3b0764" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <filter id="badgeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#10b981" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Radial highlight for depth -->
+    <radialGradient id="highlight" cx="30%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <rect x="40" y="40" width="432" height="432" rx="108" fill="url(#bgGrad)" filter="url(#dropShadow)"/>
+
+  <!-- Main Squircle Card -->
+  <rect x="40" y="40" width="432" height="432" rx="108" fill="url(#bgGrad)"/>
+  <rect x="40" y="40" width="432" height="432" rx="108" fill="url(#highlight)"/>
+  
+  <!-- Subtle Inner Border -->
+  <rect x="42" y="42" width="428" height="428" rx="106" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="3"/>
+
+  <!-- Decorative Background Circular Rings -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5" stroke-dasharray="8 8"/>
+  <circle cx="256" cy="256" r="135" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1.5"/>
+
+  <!-- Tamil Letter 'அ' with artistic typography -->
+  <g filter="url(#softShadow)" transform="translate(14, 0)">
+    <!-- Central Tamil 'அ' Glyphic Art -->
+    <text x="215" y="325" 
+          font-family="'TAU-Paalai', 'Noto Sans Tamil', 'Latha', 'Mukta Malar', sans-serif" 
+          font-size="240" 
+          font-weight="900" 
+          fill="#ffffff" 
+          text-anchor="middle"
+          letter-spacing="-2">அ</text>
+  </g>
+
+  <!-- Elegant AI Stylus / Quill Fountain Pen Crossing Over -->
+  <g transform="translate(260, 150) rotate(22)" filter="url(#softShadow)">
+    <!-- Pen Barrel -->
+    <path d="M 0,-40 L 26,-40 L 22,60 L 4,60 Z" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <rect x="-1" y="20" width="28" height="8" rx="2" fill="url(#goldGrad)"/>
+
+    <!-- Fountain Pen Golden Collar -->
+    <path d="M 3,60 L 23,60 L 25,82 L 1,82 Z" fill="url(#goldGrad)"/>
+
+    <!-- Metallic Nib Body -->
+    <path d="M 1,82 L 25,82 L 20,135 L 13,158 L 6,135 Z" fill="url(#nibGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+    <!-- Gold Nib Inlay Ornament -->
+    <path d="M 6,94 L 20,94 L 17,125 L 13,142 L 9,125 Z" fill="url(#goldGrad)" opacity="0.9"/>
+    
+    <!-- Nib Breather Hole -->
+    <circle cx="13" cy="118" r="3.5" fill="#1e1b4b"/>
+    <!-- Nib Slit line to tip -->
+    <line x1="13" y1="118" x2="13" y2="158" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Nib Tip Sparkle -->
+    <circle cx="13" cy="160" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Golden AI Sparkles (Proofreading / Intelligence) -->
+  <g fill="url(#goldGrad)">
+    <!-- Top Sparkle -->
+    <path d="M 390,105 Q 390,125 410,125 Q 390,125 390,145 Q 390,125 370,125 Q 390,125 390,105 Z"/>
+    <!-- Small Sparkle -->
+    <path d="M 115,115 Q 115,127 127,127 Q 115,127 115,139 Q 115,127 103,127 Q 115,127 115,115 Z" opacity="0.8"/>
+  </g>
+
+  <!-- Green Verification / Spell Check Pass Badge (Bottom Right) -->
+  <g transform="translate(385, 385)" filter="url(#badgeGlow)">
+    <!-- Outer Glow Ring -->
+    <circle cx="0" cy="0" r="48" fill="#10b981"/>
+    <circle cx="0" cy="0" r="44" fill="#059669"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#6ee7b7" stroke-width="3" stroke-opacity="0.8"/>
+    
+    <!-- Bold Checkmark -->
+    <path d="M -18,-2 L -6,12 L 20,-14" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

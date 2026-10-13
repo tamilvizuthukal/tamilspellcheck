@@ -1,0 +1,59 @@
+{
+  "name": "SpellTamil - தமிழ் பிழை திருத்தி",
+  "short_name": "SpellTamil",
+  "description": "உயர் செயல்திறன் கொண்ட தமிழ் எழுத்துப்பிழை, இலக்கணப்பிழை மற்றும் சந்திப்பிழை திருத்தி (AI Tamil Proofreader)",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#09090b",
+  "theme_color": "#9333ea",
+  "lang": "ta",
+  "dir": "ltr",
+  "categories": [
+    "productivity",
+    "education",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "புதிய ஆவணம் (New Document)",
+      "short_name": "புதிய ஆவணம்",
+      "url": "/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
